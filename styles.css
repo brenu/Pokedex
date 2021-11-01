@@ -1,0 +1,85 @@
+body {
+  min-height: 100vh;
+  overflow-y: hidden;
+  background: #f55;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pokedex-container {
+  position: relative;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+#pokedex-container > img {
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+
+  transition: all 0.2s;
+}
+
+#pokedex-container #pokemon-image {
+  position: absolute;
+  right: 204px;
+  top: 97px;
+  height: 94px;
+  max-width: 89px;
+  width: 100%;
+  background: #7aecec;
+  object-fit: cover;
+}
+
+#pokedex-container #search-container {
+  width: 145px;
+  position: absolute;
+  left: 63%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+#search-container #pokemon-input {
+  outline: none;
+  background: rgba(0, 0, 0, 0.06);
+  border: 0;
+  border-bottom: 3px solid #4bb543;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+}
+
+#search-container #submit-button {
+  width: min-content;
+  align-self: flex-end;
+  background: #4bb543;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  border: 0;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: inset 0px 0px 0px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+#search-container #submit-button:active {
+  box-shadow: inset 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  color: #fff;
+  margin-top: 20px;
+  font-family: "Orbitron", sans-serif;
+}
